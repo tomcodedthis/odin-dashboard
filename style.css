@@ -1,0 +1,202 @@
+:root {
+    --white: #f0f9ff;
+    --grey: #e5e7eb;
+    --primary: #7dd3fc;
+    --secondary: #0369a1;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: minmax(280px, 1fr) 5fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+header {
+    grid-area: 1 / 2 / span 1 / span 1;
+    height: 100%;
+    background-color: var(--white);
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+#header-top, #header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px;
+}
+#header-top {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+#search {
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+}
+#search-input {
+    appearance: none;
+    border: none;
+    width: 300px;
+    min-width: 200px;
+    max-width: 500px;
+    font-size: 1.2rem;
+    background-color: var(--grey);
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+#header-bottom {
+    grid-area: 2 / 1 / span 1 / span 1;
+}
+#btns-cont {
+    display: flex;
+    gap: 20px;
+}
+.edit-btns {
+    font-size: 1.3rem;
+    background-color: var(--secondary);
+    width: 125px;
+    border-radius: 25px;
+    color: var(--white);
+    font-weight: 600;
+}
+
+#sidebar {
+    grid-area: 1 / 1 / span 2 / span 1;
+    height: 100%;
+    background-color: var(--secondary);
+    color: var(--white);
+    display: grid;
+    justify-content: center;
+    align-content: space-around;
+}
+.nav-list {
+    display: grid;
+    gap: 30px;
+    margin: 15px;
+}
+.nav-item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+main {
+    grid-area: 2 / 2 / span 1 / span 1;
+    height: 100%;
+    background-color: var(--grey);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.title {
+    margin-bottom: 10px;
+}
+#projects-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 40px;
+}
+#projects {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(autofill, 1fr);
+    gap: 25px;
+}
+.project {
+    box-shadow: 0 0 10px 0 grey;
+    border-radius: 15px;
+    padding: 25px;
+    background-color: var(--white);
+    display: flex;
+}
+.project-btns-cont {
+    grid-area: 1 / 2 / span 1 / span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    margin-left: 20px;
+}
+.project-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#main-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+    margin: 40px 40px 40px 0;
+}
+.main-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+#announcments-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+#announcments {
+    background-color: var(--white);
+    box-shadow: 0 0 10px 0 grey;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.announcment {
+    border-bottom: 2px solid var(--grey);
+    padding: 20px 0;
+}
+#announcments :last-child, #trending :last-child {
+    border: 0;
+}
+#trending-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+#trending {
+    background-color: var(--white);
+    box-shadow: 0 0 10px 0 grey;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.trending {
+    display: grid;
+    grid-template-columns: 40px 3fr;
+    gap: 15px;
+    border-bottom: 2px solid var(--grey);
+    padding: 15px 0;
+}
+
+li {
+    list-style: none;
+}
+button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    margin: 0;
+    height: 40px;
+}
+img {
+    width: 40px;
+    height: 40px;
+}
+p {
+    line-height: 1.3rem;
+}

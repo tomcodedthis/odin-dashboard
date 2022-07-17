@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <header>
+        <div id="header-top">
+            <div id="search">
+                <input type="text" id="search-input">
+                <button><img src="./images/search.png" alt="Search Icon" id="search-icon"></button>
+            </div>
+            <button><img src="./images/notification.png" alt="notification-icon"></button>
+            <button><img src="./images/user-blue.png" alt="User Icon" class="user-icon"></button>
+            <h2 class="user-name">@jsmith</h2>
+        </div>
+
+        <div id="header-bottom">
+            <h1>Welcome, John Smith</h1>
+            <div id="btns-cont">
+                <button class="edit-btns">New</button>
+                <button class="edit-btns">Edit</button>
+                <button class="edit-btns">Share</button>
+            </div>
+        </div>
+    </header>
+
+    <div id="sidebar">
+        <div class="nav-item">
+            <button><img src="./images/dashboard.png" alt="Title Icon" id="title-icon"></button>
+            <h1 id="title">Dashboard</h1>
+        </div>
+
+        <nav id="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <h2 class="nav-text">Home</h2>
+                    <button><img src="./images/home.png" alt="Home Icon" class="nav-icon"></button>
+                </li>
+                <li class="nav-item">
+                    <h2 class="nav-text">Profile</h2>
+                    <button><img src="./images/profile.png" alt="Profile Icon" class="nav-icon"></button>
+                </li>
+                <li class="nav-item">
+                    <h2 class="nav-text">Messages</h2>
+                    <button><img src="./images/sms.png" alt="Messages Icon" class="nav-icon"></button>
+                </li>
+                <li class="nav-item">
+                    <h2 class="nav-text">History</h2>
+                    <button><img src="./images/history.png" alt="History Icon" class="nav-icon"></button>
+                </li>
+                <li class="nav-item">
+                    <h2 class="nav-text">Tasks</h2>
+                    <button><img src="./images/task.png" alt="Tasks Icon" class="nav-icon"></button>
+                </li>
+                <li class="nav-item">
+                    <h2 class="nav-text">Forum</h2>
+                    <button><img src="./images/forum.png" alt="Forum Icon" class="nav-icon"></button>
+                </li>
+            </ul>
+        </nav>
+
+        <nav id="support-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <h2 class="nav-text">Settings</h2>
+                    <button><img src="./images/settings.png" alt="Settings Icon" class="nav-icon"></button>
+                </li>
+                <li class="nav-item">
+                    <h2 class="nav-text">Support</h2>
+                    <button><img src="./images/help.png" alt="Support Icon" class="nav-icon"></button>
+                </li>
+                <li class="nav-item">
+                    <h2 class="nav-text">Privacy</h2>
+                    <button><img src="./images/lock.png" alt="Privacy Icon" class="nav-icon"></button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div id="projects-cont">
+            <h2 class="title">Your Projects</h2>
+            <div id="projects">
+                <div class="project">
+                    <div class="project-text">
+                        <h3 class="project-title">1. Cool Project</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In mollis nunc sed id semper risus in hendrerit.
+                        </p>
+                    </div>
+                    <div class="project-btns-cont">
+                        <button class="project-btn"><img src="./images/star.png" alt="Star" class="project-icon"></button>
+                        <button class="project-btn"><img src="./images/list-add.png" alt="Watch" class="project-icon"></button>
+                        <button class="project-btn"><img src="./images/share.png" alt="Share" class="project-icon"></button>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-text">
+                        <h3 class="project-title">2. Coolish Project</h3>
+                        <p>
+                            At elementum eu facilisis sed odio morbi quis. Pulvinar proin gravida hendrerit lectus a. Ac turpis egestas sed tempus urna et pharetra.
+                        </p>
+                    </div>
+                    <div class="project-btns-cont">
+                        <button class="project-btn"><img src="./images/star.png" alt="Star" class="project-icon"></button>
+                        <button class="project-btn"><img src="./images/list-add.png" alt="Watch" class="project-icon"></button>
+                        <button class="project-btn"><img src="./images/share.png" alt="Share" class="project-icon"></button>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-text">
+                        <h3 class="project-title">3. Uncool Project</h3>
+                        <p>
+                            Ac auctor augue mauris augue neque gravida in fermentum. In nisl nisi scelerisque eu ultrices vitae auctor eu. A cras semper auctor neque vitae tempus quam pellentesque nec.
+                        </p>
+                    </div>
+                    <div class="project-btns-cont">
+                        <button class="project-btn"><img src="./images/star.png" alt="Star" class="project-icon"></button>
+                        <button class="project-btn"><img src="./images/list-add.png" alt="Watch" class="project-icon"></button>
+                        <button class="project-btn"><img src="./images/share.png" alt="Share" class="project-icon"></button>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-text">
+                        <h3 class="project-title">4. Easy Project</h3>
+                        <p>
+                            Laoreet non curabitur gravida arcu. Convallis tellus id interdum velit laoreet id donec ultrices. Vestibulum sed arcu non odio euismod lacinia at quis.
+                        </p>
+                    </div>
+                    <div class="project-btns-cont">
+                        <button class="project-btn"><img src="./images/star.png" alt="Star" class="project-icon"></button>
+                        <button class="project-btn"><img src="./images/list-add.png" alt="Watch" class="project-icon"></button>
+                        <button class="project-btn"><img src="./images/share.png" alt="Share" class="project-icon"></button>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-text">
+                        <h3 class="project-title">5. Easyish Project</h3>
+                        <p>
+                            Gravida cum sociis natoque penatibus. Consectetur adipiscing elit ut aliquam purus. Sit amet venenatis urna cursus eget nunc scelerisque viverra mauris.
+                        </p>
+                    </div>
+                    <div class="project-btns-cont">
+                        <button class="project-btn"><img src="./images/star.png" alt="Star" class="project-icon"></button>
+                        <button class="project-btn"><img src="./images/list-add.png" alt="Watch" class="project-icon"></button>
+                        <button class="project-btn"><img src="./images/share.png" alt="Share" class="project-icon"></button>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-text">
+                        <h3 class="project-title">6. Hard Project</h3>
+                        <p>
+                            Justo nec ultrices dui sapien eget mi proin sed. Vestibulum sed arcu non odio euismod lacinia at. Iaculis nunc sed augue lacus viverra vitae.
+                        </p>
+                    </div>
+                    <div class="project-btns-cont">
+                        <button class="project-btn"><img src="./images/star.png" alt="Star" class="project-icon"></button>
+                        <button class="project-btn"><img src="./images/list-add.png" alt="Watch" class="project-icon"></button>
+                        <button class="project-btn"><img src="./images/share.png" alt="Share" class="project-icon"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="main-right">
+            <div id="announcments-cont" class="main-right">
+                <h2 class="title">Announcments</h2>
+                <div id="announcments">
+                    <div class="announcment">
+                        <h3 class="title">Maintenance</h3>
+                        <p class="announcment-text">
+                            Tellus cras adipiscing enim eu turpis egestas pretium aenean. Ultrices eros in cursus turpis massa tincidunt dui.
+                        </p>
+                    </div>
+        
+                    <div class="announcment">
+                        <h3 class="title">Community Update</h3>
+                        <p class="announcment-text">
+                            Morbi tincidunt augue interdum velit euismod in pellentesque massa. Mauris sit amet massa vitae.
+                        </p>
+                    </div>
+        
+                    <div class="announcment" id="last-announcment">
+                        <h3 class="title">Privacy Policy Changes</h3>
+                        <p class="announcment-text">
+                            Lobortis mattis aliquam faucibus purus. Risus quis varius quam quisque id diam vel quam elementum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="trending-cont" class="main-right">
+                <h2 class="title">Trending</h2>
+                <div id="trending">
+                    <div class="trending">
+                        <button><img src="./images/user-purple.png" alt="User Icon" class="user-icon trending-icon"></button>
+                        <div class="trending-text">
+                            <p>
+                                @adam<br>
+                                aliquet risus feugiat
+                            </p>
+                        </div>
+                    </div>
+                    <div class="trending">
+                        <button><img src="./images/user-red.png" alt="User Icon" class="user-icon trending-icon"></button>
+                        <div class="trending-text">
+                            <p>
+                                @lucy<br>
+                                cursus in hac
+                            </p>
+                        </div>
+                    </div>
+                    <div class="trending">
+                        <button><img src="./images/user-blue.png" alt="User Icon" class="user-icon trending-icon"></button>
+                        <div class="trending-text">
+                            <p>
+                                @jsmith<br>
+                                luctus accumsan tortor
+                            </p>
+                        </div>
+                    </div>
+                    <div class="trending">
+                        <button><img src="./images/user-green.png" alt="User Icon" class="user-icon trending-icon"></button>
+                        <div class="trending-text">
+                            <p>
+                                @dsnuts<br>
+                                maecenas ultricies mi
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<!--<div> Icons made by <a href="https://www.flaticon.com/authors/kmg-design" title="kmg design"> kmg design </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>-->
+</html>
