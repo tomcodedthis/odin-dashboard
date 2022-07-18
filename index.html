@@ -9,76 +9,78 @@
 </head>
 <body>
     <header>
-        <div id="header-top">
-            <div id="search">
-                <input type="text" id="search-input">
-                <button><img src="./images/search.png" alt="Search Icon" id="search-icon"></button>
-            </div>
-            <button><img src="./images/notification.png" alt="notification-icon"></button>
-            <button><img src="./images/user-blue.png" alt="User Icon" class="user-icon"></button>
+        <div id="profile-cont">
+            <a href="https://github.com/tomcodedthis" target="_blank"><img src="./images/user-blue.png" alt="User Icon" class="user-icon"></a>
+            <a href="https://github.com/tomcodedthis" target="_blank"><img src="./images/black/notification.png" alt="notification-icon"></a>
             <h2 class="user-name">@jsmith</h2>
         </div>
-
-        <div id="header-bottom">
-            <h1>Welcome, John Smith</h1>
-            <div id="btns-cont">
-                <button class="edit-btns">New</button>
-                <button class="edit-btns">Edit</button>
-                <button class="edit-btns">Share</button>
-            </div>
+        <div id="btns-cont">
+            <a href="https://github.com/tomcodedthis" target="_blank"><button class="edit-btns">New</button></a>
+            <a href="https://github.com/tomcodedthis" target="_blank"><button class="edit-btns">Edit</button></a>
+            <a href="http://github.com/tomcodedthis" target="_blank"><button class="edit-btns">Share</button></a>
+        </div>
+        <div id="search">
+            <input type="text" id="search-input">
+            <a href="https://github.com/tomcodedthis" target="_blank"><img src="./images/black/search.png" alt="Search Icon" id="search-icon"></a>
         </div>
     </header>
 
     <div id="sidebar">
-        <div class="nav-item">
-            <button><img src="./images/dashboard.png" alt="Title Icon" id="title-icon"></button>
-            <h1 id="title">Dashboard</h1>
-        </div>
+        <a href="https://github.com/tomcodedthis" target="_blank" class="nav-cont">
+            <div class="nav-list nav-item">
+                <h1 id="title" class="nav-text" value="Dashboard">Dashboard</h1>
+                <img src="./images/white/dashboard_w.png" alt="Title Icon" id="title-icon" class="nav-icon">
+            </div>
+        </a>
 
-        <nav id="main-nav">
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <h2 class="nav-text">Home</h2>
-                    <button><img src="./images/home.png" alt="Home Icon" class="nav-icon"></button>
-                </li>
-                <li class="nav-item">
-                    <h2 class="nav-text">Profile</h2>
-                    <button><img src="./images/profile.png" alt="Profile Icon" class="nav-icon"></button>
-                </li>
-                <li class="nav-item">
-                    <h2 class="nav-text">Messages</h2>
-                    <button><img src="./images/sms.png" alt="Messages Icon" class="nav-icon"></button>
-                </li>
-                <li class="nav-item">
-                    <h2 class="nav-text">History</h2>
-                    <button><img src="./images/history.png" alt="History Icon" class="nav-icon"></button>
-                </li>
-                <li class="nav-item">
-                    <h2 class="nav-text">Tasks</h2>
-                    <button><img src="./images/task.png" alt="Tasks Icon" class="nav-icon"></button>
-                </li>
-                <li class="nav-item">
-                    <h2 class="nav-text">Forum</h2>
-                    <button><img src="./images/forum.png" alt="Forum Icon" class="nav-icon"></button>
-                </li>
-            </ul>
+        <nav id="main-nav" class="nav-cont">
+            <a href="https://github.com/tomcodedthis" target="_blank">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <h2 class="nav-text">Home</h2>
+                        <img src="./images/white/home_w.png" alt="Home Icon" class="nav-icon">
+                    </li>
+                    <li class="nav-item">
+                        <h2 class="nav-text">Profile</h2>
+                        <img src="./images/white/profile_w.png" alt="Profile Icon" class="nav-icon">
+                    </li>
+                    <li class="nav-item">
+                        <h2 class="nav-text">Messages</h2>
+                        <img src="./images/white/sms_w.png" alt="Messages Icon" class="nav-icon">
+                    </li>
+                    <li class="nav-item">
+                        <h2 class="nav-text">History</h2>
+                        <img src="./images/white/history_w.png" alt="History Icon" class="nav-icon">
+                    </li>
+                    <li class="nav-item">
+                        <h2 class="nav-text">Tasks</h2>
+                        <img src="./images/white/task_w.png" alt="Tasks Icon" class="nav-icon">
+                    </li>
+                    <li class="nav-item">
+                        <h2 class="nav-text">Forum</h2>
+                        <img src="./images/white/forum_w.png" alt="Forum Icon" class="nav-icon">
+                    </li>
+                </ul>
+            </a>
         </nav>
 
-        <nav id="support-nav">
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <h2 class="nav-text">Settings</h2>
-                    <button><img src="./images/settings.png" alt="Settings Icon" class="nav-icon"></button>
-                </li>
-                <li class="nav-item">
-                    <h2 class="nav-text">Support</h2>
-                    <button><img src="./images/help.png" alt="Support Icon" class="nav-icon"></button>
-                </li>
-                <li class="nav-item">
-                    <h2 class="nav-text">Privacy</h2>
-                    <button><img src="./images/lock.png" alt="Privacy Icon" class="nav-icon"></button>
-                </li>
-            </ul>
+        <nav id="support-nav" class="nav-cont">
+            <a href="https://github.com/tomcodedthis" target="_blank">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <h2 class="nav-text">Settings</h2>
+                        <img src="./images/white/settings_w.png" alt="Settings Icon" class="nav-icon">
+                    </li>
+                    <li class="nav-item">
+                        <h2 class="nav-text">Support</h2>
+                        <img src="./images/white/help_w.png" alt="Support Icon" class="nav-icon">
+                    </li>
+                    <li class="nav-item">
+                        <h2 class="nav-text">Privacy</h2>
+                        <img src="./images/white/lock_w.png" alt="Privacy Icon" class="nav-icon">
+                    </li>
+                </ul>
+            </a>
         </nav>
     </div>
 
@@ -94,9 +96,9 @@
                         </p>
                     </div>
                     <div class="project-btns-cont">
-                        <button class="project-btn"><img src="./images/star.png" alt="Star" class="project-icon"></button>
-                        <button class="project-btn"><img src="./images/list-add.png" alt="Watch" class="project-icon"></button>
-                        <button class="project-btn"><img src="./images/share.png" alt="Share" class="project-icon"></button>
+                        <button class="project-btn"><img src="./images/black/star.png" alt="StarOff" class="project-icon star"></button>
+                        <button class="project-btn"><img src="./images/black/list-add.png" alt="Watch" class="project-icon"></button>
+                        <button class="project-btn"><img src="./images/black/share.png" alt="Share" class="project-icon"></button>
                     </div>
                 </div>
                 <div class="project">
@@ -107,9 +109,9 @@
                         </p>
                     </div>
                     <div class="project-btns-cont">
-                        <button class="project-btn"><img src="./images/star.png" alt="Star" class="project-icon"></button>
-                        <button class="project-btn"><img src="./images/list-add.png" alt="Watch" class="project-icon"></button>
-                        <button class="project-btn"><img src="./images/share.png" alt="Share" class="project-icon"></button>
+                        <button class="project-btn"><img src="./images/black/star.png" alt="StarOff" class="project-icon star"></button>
+                        <button class="project-btn"><img src="./images/black/list-add.png" alt="Watch" class="project-icon"></button>
+                        <button class="project-btn"><img src="./images/black/share.png" alt="Share" class="project-icon"></button>
                     </div>
                 </div>
                 <div class="project">
@@ -120,9 +122,9 @@
                         </p>
                     </div>
                     <div class="project-btns-cont">
-                        <button class="project-btn"><img src="./images/star.png" alt="Star" class="project-icon"></button>
-                        <button class="project-btn"><img src="./images/list-add.png" alt="Watch" class="project-icon"></button>
-                        <button class="project-btn"><img src="./images/share.png" alt="Share" class="project-icon"></button>
+                        <button class="project-btn"><img src="./images/black/star.png" alt="StarOff" class="project-icon star"></button>
+                        <button class="project-btn"><img src="./images/black/list-add.png" alt="Watch" class="project-icon"></button>
+                        <button class="project-btn"><img src="./images/black/share.png" alt="Share" class="project-icon"></button>
                     </div>
                 </div>
                 <div class="project">
@@ -133,9 +135,9 @@
                         </p>
                     </div>
                     <div class="project-btns-cont">
-                        <button class="project-btn"><img src="./images/star.png" alt="Star" class="project-icon"></button>
-                        <button class="project-btn"><img src="./images/list-add.png" alt="Watch" class="project-icon"></button>
-                        <button class="project-btn"><img src="./images/share.png" alt="Share" class="project-icon"></button>
+                        <button class="project-btn"><img src="./images/black/star.png" alt="StarOff" class="project-icon star"></button>
+                        <button class="project-btn"><img src="./images/black/list-add.png" alt="Watch" class="project-icon"></button>
+                        <button class="project-btn"><img src="./images/black/share.png" alt="Share" class="project-icon"></button>
                     </div>
                 </div>
                 <div class="project">
@@ -146,9 +148,9 @@
                         </p>
                     </div>
                     <div class="project-btns-cont">
-                        <button class="project-btn"><img src="./images/star.png" alt="Star" class="project-icon"></button>
-                        <button class="project-btn"><img src="./images/list-add.png" alt="Watch" class="project-icon"></button>
-                        <button class="project-btn"><img src="./images/share.png" alt="Share" class="project-icon"></button>
+                        <button class="project-btn"><img src="./images/black/star.png" alt="StarOff" class="project-icon star"></button>
+                        <button class="project-btn"><img src="./images/black/list-add.png" alt="Watch" class="project-icon"></button>
+                        <button class="project-btn"><img src="./images/black/share.png" alt="Share" class="project-icon"></button>
                     </div>
                 </div>
                 <div class="project">
@@ -159,9 +161,9 @@
                         </p>
                     </div>
                     <div class="project-btns-cont">
-                        <button class="project-btn"><img src="./images/star.png" alt="Star" class="project-icon"></button>
-                        <button class="project-btn"><img src="./images/list-add.png" alt="Watch" class="project-icon"></button>
-                        <button class="project-btn"><img src="./images/share.png" alt="Share" class="project-icon"></button>
+                        <button class="project-btn"><img src="./images/black/star.png" alt="StarOff" class="project-icon star"></button>
+                        <button class="project-btn"><img src="./images/black/list-add.png" alt="Watch" class="project-icon"></button>
+                        <button class="project-btn"><img src="./images/black/share.png" alt="Share" class="project-icon"></button>
                     </div>
                 </div>
             </div>
@@ -200,43 +202,37 @@
                     <div class="trending">
                         <button><img src="./images/user-purple.png" alt="User Icon" class="user-icon trending-icon"></button>
                         <div class="trending-text">
-                            <p>
-                                @adam<br>
-                                aliquet risus feugiat
-                            </p>
-                        </div>
-                    </div>
-                    <div class="trending">
-                        <button><img src="./images/user-red.png" alt="User Icon" class="user-icon trending-icon"></button>
-                        <div class="trending-text">
-                            <p>
-                                @lucy<br>
-                                cursus in hac
-                            </p>
+                            <p class="username">@b.dover</p>
+                            <p>aliquet risus feugiat</p>
                         </div>
                     </div>
                     <div class="trending">
                         <button><img src="./images/user-blue.png" alt="User Icon" class="user-icon trending-icon"></button>
                         <div class="trending-text">
-                            <p>
-                                @jsmith<br>
-                                luctus accumsan tortor
-                            </p>
+                            <p class="username">@jsmith</p>
+                            <p>luctus accumsan tortor</p>
+                        </div>
+                    </div>
+                    <div class="trending">
+                        <button><img src="./images/user-red.png" alt="User Icon" class="user-icon trending-icon"></button>
+                        <div class="trending-text">
+                            <p class="username">@m.hunt</p>
+                            <p>cursus in hac</p>
                         </div>
                     </div>
                     <div class="trending">
                         <button><img src="./images/user-green.png" alt="User Icon" class="user-icon trending-icon"></button>
                         <div class="trending-text">
-                            <p>
-                                @dsnuts<br>
-                                maecenas ultricies mi
-                            </p>
+                            <p class="username">@dsnuts</p>
+                            <p>maecenas ultricies mi</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+
+    <script src="./script.js"></script>
 </body>
 <!--<div> Icons made by <a href="https://www.flaticon.com/authors/kmg-design" title="kmg design"> kmg design </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>-->
 </html>

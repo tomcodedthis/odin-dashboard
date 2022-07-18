@@ -1,8 +1,8 @@
 :root {
     --white: #f0f9ff;
     --grey: #e5e7eb;
-    --primary: #7dd3fc;
-    --secondary: #0369a1;
+    --primary: #134e4a;
+    --secondary: #0f766e;
 }
 * {
     margin: 0;
@@ -13,45 +13,42 @@ body {
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-columns: minmax(280px, 1fr) 5fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: 100px 1fr;
 }
 
 header {
     grid-area: 1 / 2 / span 1 / span 1;
     height: 100%;
     background-color: var(--white);
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 60px;
+    margin: 0;
+    padding: 0 40px;
 }
-#header-top, #header-bottom {
+#profile-cont {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 40px;
-    margin: 30px;
-}
-#header-top {
-    grid-area: 1 / 1 / span 1 / span 1;
+    gap: 35px;
 }
 #search {
     display: flex;
-    justify-content: right;
+    justify-content: left;
     gap: 15px;
+    width: 100%;
 }
 #search-input {
     appearance: none;
     border: none;
-    width: 300px;
+    width: 100%;
     min-width: 200px;
-    max-width: 500px;
+    max-width: 600px;
     font-size: 1.2rem;
     background-color: var(--grey);
     border-radius: 30px;
     padding: 10px 25px;
-}
-#header-bottom {
-    grid-area: 2 / 1 / span 1 / span 1;
 }
 #btns-cont {
     display: flex;
@@ -60,8 +57,8 @@ header {
 .edit-btns {
     font-size: 1.3rem;
     background-color: var(--secondary);
-    width: 125px;
-    border-radius: 25px;
+    width: 100px;
+    border-radius: 20px;
     color: var(--white);
     font-weight: 600;
 }
@@ -69,22 +66,46 @@ header {
 #sidebar {
     grid-area: 1 / 1 / span 2 / span 1;
     height: 100%;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     color: var(--white);
     display: grid;
     justify-content: center;
-    align-content: space-around;
+    align-content: flex-start;
+    gap: 100px;
+}
+.nav-cont {
+    margin: 24px;
 }
 .nav-list {
     display: grid;
     gap: 30px;
-    margin: 15px;
+    height: 100%;
 }
 .nav-item {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    gap: 15px;
+}
+.nav-text {
+    display: none;
+}
+#title-icon {
+    width: 50px;
+    height: 50px;
+}
+.nav-icon {
+    width: 45px;
+    height: 45px;
+}
+.highlight {
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 0 10px 10px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    padding: 0;
 }
 
 main {
@@ -128,7 +149,8 @@ main {
 .project-text {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 20px;
 }
 #main-right {
     display: flex;
@@ -158,7 +180,7 @@ main {
 }
 .announcment {
     border-bottom: 2px solid var(--grey);
-    padding: 20px 0;
+    padding: 20px;
 }
 #announcments :last-child, #trending :last-child {
     border: 0;
@@ -178,25 +200,53 @@ main {
 }
 .trending {
     display: grid;
-    grid-template-columns: 40px 3fr;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
     gap: 15px;
     border-bottom: 2px solid var(--grey);
-    padding: 15px 0;
+    padding: 20px 0;
+}
+.username {
+    font-weight: 700;
+}
+.trending-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 li {
     list-style: none;
+}
+a {
+    transition: 300ms;
 }
 button {
     background-color: rgba(0, 0, 0, 0);
     border: none;
     margin: 0;
     height: 40px;
+    transition: 300ms;
+}
+.project button:hover, .trending button:hover, header a:hover {
+    transform: scale(1.06);
+}
+.project:hover {
+    box-shadow: 0 0 15px 0 grey;
+}
+#search-input:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#search-input:focus {
+    outline: none;
+}
+.announcment:hover, .trending:hover {
+    background-color: rgba(0, 0, 0, 0.04);
 }
 img {
     width: 40px;
     height: 40px;
 }
 p {
-    line-height: 1.3rem;
+    line-height: 1.4rem;
 }
